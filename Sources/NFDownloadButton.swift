@@ -1364,11 +1364,9 @@ open class NFDownloadButton: UIButton {
 
         super.init(frame: frame)
 
-        draw()
-
     }
 
-    init(frame: CGRect, isDownloaded: Bool = false, style: NFDownloadButtonStyle = .iOS, palette: Palette = Palette()) {
+    public init(frame: CGRect, isDownloaded: Bool = false, style: NFDownloadButtonStyle = .iOS, palette: Palette = Palette()) {
 
         super.init(frame: frame)
 
@@ -1387,6 +1385,8 @@ open class NFDownloadButton: UIButton {
     // MARK: - Lifecyle
     override open func awakeFromNib() {
 
+        super.awakeFromNib()
+        
         draw()
 
     }
